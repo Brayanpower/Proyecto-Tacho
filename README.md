@@ -16,8 +16,13 @@
 | Id | Componente | Descripción | Imagen | Cantidad | Costo total |
 |----|------------|-------------|--------|----------|-------------|
 |  2  | ESP32          |       El ESP32 es un chip muy usado en electrónica. Tiene Wi-Fi y Bluetooth, y es útil para hacer proyectos de IoT y dispositivos inteligentes. Es popular porque es potente, económico y fácil de usar.      |  ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/fc004a77-3d5c-40b3-92a8-a81383283e84)  |       2   |    140         |
-|    |            |             |        |          |             |
-|    |            |             |        |          |             |
+|   3 |     MQ-9       |     Claro, el sensor MQ-9 es un sensor de gas utilizado para detectar gases inflamables como el metano y el propano, así como también monóxido de carbono. Es comúnmente utilizado en sistemas de detección de fugas de gas en entornos industriales y domésticos, así como también en proyectos de seguridad y monitoreo ambiental. Es fácil de usar y proporciona una detección rápida y confiable de gases peligrosos.        |    ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/0b20e02f-48cb-46ae-bda3-724bc6610a39)
+    |      1    |    60         |
+|   4 |            |             |        |          |             |
+|   5 |            |             |        |          |             |
+|   6 |            |             |        |          |             |
+|   7 |            |             |        |          |             |
+|   8 |            |             |        |          |             |
 
 ## Lista de Software utilizado
 | Id | Software | Version | Tipo |
