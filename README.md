@@ -20,8 +20,12 @@
 |   4 |     KY-019       |     El KY-019 es un módulo de relé utilizado para controlar dispositivos de alta potencia con un microcontrolador como Arduino. Esencialmente, actúa como un interruptor controlado electrónicamente.        | ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/b1dfadc4-bb8b-4b6f-98e7-d90303ca018c) |   2       |    54         |
 |   5 |       KY-026     | El KY-026 es un módulo sensor de detección de llama o fuego. Utiliza un sensor de infrarrojos para detectar la presencia de una llama o una fuente de calor. Este módulo es comúnmente utilizado en proyectos de seguridad y monitoreo para detectar incendios o para activar sistemas de alarma en caso de emergencia. |![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/b24531e0-bdf7-4f68-9713-ad1ec509161c) |   1       |    22         |
 |   6 |       KY-016     |      El KY-016 es un módulo sensor de temperatura y humedad que utiliza el sensor DHT11. Este sensor es capaz de medir la temperatura y la humedad del ambiente y enviar estos datos de manera digital a un microcontrolador como Arduino.       |   ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/8181db51-777a-4d69-9ff2-7b6814caffb4)|   1       |    15         |
-|   7 |            |             |        |          |             |
-|   8 |            |             |        |          |             |
+|   7 |       ky-018     |     El KY-018 es un módulo sensor de detección de luz. Utiliza un fotodiodo para medir la intensidad de la luz en el entorno. Es comúnmente utilizado en proyectos donde se necesita detectar la presencia o ausencia de luz, como en sistemas de iluminación automática, sistemas de seguridad, o para controlar dispositivos en función de la luminosidad del entorno.        |     ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/70afb6b1-5b8d-4c01-8aaa-317c96c27d4a)|  1        |    15         |
+|   8 |     PIR sesnor       |     El sensor PIR (Passive Infrared Sensor) es un dispositivo que detecta movimiento al detectar cambios en el nivel de radiación infrarroja en su campo de visión. Estos sensores son comúnmente utilizados en sistemas de seguridad y automatización para detectar la presencia de personas u objetos en áreas específicas.        |     ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/71bf22cc-2cd5-4e87-bc5b-6dafef5164e0) | 1         |           50  |
+|   9 |            |             |        |          |             |
+|   10 |            |             |        |          |             |
+|   11 |            |             |        |          |             |
+|   12|            |             |        |          |             |
 
 ## Lista de Software utilizado
 | Id | Software | Version | Tipo |
