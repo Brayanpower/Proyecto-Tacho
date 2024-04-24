@@ -41,8 +41,6 @@
 ## Visión del producto
 ¿Como generar la visión del proyecto?
 
-Para los trabajadores que utilizan el espacio, nuestro proyecto busca simplificar el proceso de encender y apagar las luces manualmente al entrar y salir del área de trabajo. Además, permite apagar remotamente las luces si se dejan encendidas accidentalmente, lo que promueve el ahorro de energía y facilita el manejo de la iluminación.
-
 Para trabajadores que utilizan el espacio de trabajo.
 Quienes necesitan una manera más conveniente y automatizada de controlar la iluminación del área.
 El sistema de automatización de luces y detección de gas.
@@ -71,5 +69,8 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 - Captura de pantalla de flujos de Node RED
 - Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
 - Video demostrativo de las funcionalidades del proyecto
+- ![Imagen de WhatsApp 2024-04-24 a las 08 29 06_91f4f05f](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/63d4ab07-a21a-4a6c-8247-9f3de862b3c0)
+- ![Imagen de WhatsApp 2024-04-24 a las 08 29 06_87b08fef](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/25b0cef7-5eeb-4785-b249-40f1b36d2aff)
+
 - Código fuente (PROHIBIDO PONER COMPRIMIDOS)
 
