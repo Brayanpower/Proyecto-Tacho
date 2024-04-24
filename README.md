@@ -33,9 +33,10 @@
 ## Lista de Software utilizado
 | Id | Software | Version | Tipo |
 |----|----------|---------|------|
-|    |          |         |      |
-|    |          |         |      |
-|    |          |         |      |
+|  1  |    Thonny      |3.3.11	|  Entorno de desarrollo integrado (IDE) para Python    |
+|  2  |   Node-RED	       |2.1.3|Entorno de programación visual para IoT (Internet de las cosas)|
+|  3  |    PostgreSQL      |14.0|Sistema de gestión de bases de datos relacional (SGBD)|
+|  4  |Raspbian|Ultima Version|Sistema operativo basado en Linux para Raspberry Pi|
 
 ## Visión del producto
 ¿Como generar la visión del proyecto?
