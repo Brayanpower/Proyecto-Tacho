@@ -2,7 +2,7 @@
 
 ## Integrantes
 - BRAYAN DANIEL MENDIOLA GUTIERREZ 1222100472
-- 
+- RAMON LOPEZ GARCIA 1222100432
 
 ## Carta de liberación del proyecto
 - Dirigida al Docente
