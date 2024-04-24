@@ -17,8 +17,9 @@
 |----|------------|-------------|--------|----------|-------------|
 |  2  | ESP32          |       El ESP32 es un chip muy usado en electrónica. Tiene Wi-Fi y Bluetooth, y es útil para hacer proyectos de IoT y dispositivos inteligentes. Es popular porque es potente, económico y fácil de usar.      |  ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/fc004a77-3d5c-40b3-92a8-a81383283e84)  |       2   |    140         |
 |   3 |     MQ-9       |     Claro, el sensor MQ-9 es un sensor de gas utilizado para detectar gases inflamables como el metano y el propano, así como también monóxido de carbono. Es comúnmente utilizado en sistemas de detección de fugas de gas en entornos industriales y domésticos, así como también en proyectos de seguridad y monitoreo ambiental. Es fácil de usar y proporciona una detección rápida y confiable de gases peligrosos.        |    ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/0b20e02f-48cb-46ae-bda3-724bc6610a39) |      1    |    60         |
-|   4 |            |             |        |          |             |
-|   5 |            |             |        |          |             |
+|   4 |     KY-019       |     El KY-019 es un módulo de relé utilizado para controlar dispositivos de alta potencia con un microcontrolador como Arduino. Esencialmente, actúa como un interruptor controlado electrónicamente.        | ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/b1dfadc4-bb8b-4b6f-98e7-d90303ca018c) |   2       |    54         |
+|   5 |       KY-026     | 
+El KY-026 es un módulo sensor de detección de llama o fuego. Utiliza un sensor de infrarrojos para detectar la presencia de una llama o una fuente de calor. Este módulo es comúnmente utilizado en proyectos de seguridad y monitoreo para detectar incendios o para activar sistemas de alarma en caso de emergencia. |![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/b24531e0-bdf7-4f68-9713-ad1ec509161c) |   1       |    22         |
 |   6 |            |             |        |          |             |
 |   7 |            |             |        |          |             |
 |   8 |            |             |        |          |             |
