@@ -15,7 +15,8 @@
 ## Lista del Hardware utilizado
 | Id | Componente | Descripción | Imagen | Cantidad | Costo total |
 |----|------------|-------------|--------|----------|-------------|
-|  2  | ESP32          |       El ESP32 es un chip muy usado en electrónica. Tiene Wi-Fi y Bluetooth, y es útil para hacer proyectos de IoT y dispositivos inteligentes. Es popular porque es potente, económico y fácil de usar.      |  ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/eac28ee3-86f5-44cc-9630-84f00170474c)
+|  2  | ESP32          |       El ESP32 es un chip muy usado en electrónica. Tiene Wi-Fi y Bluetooth, y es útil para hacer proyectos de IoT y dispositivos inteligentes. Es popular porque es potente, económico y fácil de usar.      |  ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/fc004a77-3d5c-40b3-92a8-a81383283e84)
+
       |       2   |    140         |
 |    |            |             |        |          |             |
 |    |            |             |        |          |             |
