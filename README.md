@@ -26,9 +26,8 @@
 |   10 |       Display OLED     |      El display OLED (Organic Light-Emitting Diode) para Arduino es un tipo de pantalla que utiliza diodos orgánicos para producir luz. Estas pantallas son delgadas, livianas y consumen menos energía en comparación con las pantallas LCD tradicionales. Son ideales para proyectos donde se requiere una pantalla de alta calidad con bajo consumo de energía, como en dispositivos portátiles, wearables, y sistemas de monitoreo en tiempo real.        |     ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/7243428d-eed2-449b-973f-bd450c44eaf0)|      1    |     70        |
 |   11 |     paquete Cables Dupont       |       Los cables Dupont son cables con conectores macho y hembra en cada extremo, diseñados para facilitar la conexión entre componentes electrónicos. Estos cables son muy utilizados en proyectos de prototipado electrónico y en la conexión de placas de desarrollo como Arduino con otros módulos, sensores o actuadores.      |  ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/feb0dffe-1606-4f19-ae1b-d5541e479a58)|  1   |        70     |
 |   12|caja de resgistro sensillo|       caja de registro de intalacion lectrica      |   ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f0aad9d1-4e99-495a-8b06-1ed1d80041c8)|  1        |     7        |
-|   13|   CINTA AISLANTE ELÉCTRICA DE PVC 16.76 M NEGRA          |     
-La cinta aislante eléctrica es un tipo de cinta adhesiva diseñada específicamente para aislar y proteger conexiones eléctricas.  |   ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/d06365b7-b6a5-4c71-9d22-d93f7ecaef22)|    1      |     14        |
-|   12|            |             |        |          |             |
+|   13|   CINTA AISLANTE ELÉCTRICA DE PVC 16.76 M NEGRA          |     La cinta aislante eléctrica es un tipo de cinta adhesiva diseñada específicamente para aislar y proteger conexiones eléctricas.  |   ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/d06365b7-b6a5-4c71-9d22-d93f7ecaef22)|    1      |     14        |
+|   14|    cable estañado        |             |        |          |             |
 |   12|            |             |        |          |             |
 
 ## Lista de Software utilizado
