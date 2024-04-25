@@ -74,7 +74,8 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/fd5edc21-ac43-4da9-9d4c-57eb642a0c02)
   - Led RGB
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/95d29839-3c05-43b5-a22c-7a28e0d94a05)
-
+## Archivo de el Flujo
+El Flujo utilizado en este proyecto estan aqui ->[aqui](https://github.com/Brayanpower/Proyecto-Tacho/tree/main/Codigos%20Usados)
 
 
 ### Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
@@ -108,7 +109,7 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 ![Imagen de WhatsApp 2024-04-24 a las 17 10 23_db387651](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/4acbcbbe-00b3-40a1-981a-2adee6446f3f)
 
 
-### Códigos fuente en la carpeta junto a readme
+## Códigos fuente en la carpeta junto a readme
 Los codigos utilizados en este proyecto estan aqui ->[aqui](https://github.com/Brayanpower/Proyecto-Tacho/tree/main/Codigos%20Usados)
 
 
