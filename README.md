@@ -2,7 +2,7 @@
 
 ## Integrantes
 - BRAYAN DANIEL MENDIOLA GUTIERREZ 1222100472
-- RAMON LOPEZ GARCIA 1222100432
+- RAMON LOPEZ GARCIA 1222100435
 
 ## Carta de liberación del proyecto
 ![Imagen de WhatsApp 2024-04-24 a las 19 46 05_caf01674](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/3746f13e-ba8e-445e-9d81-83533d7f0b64)
