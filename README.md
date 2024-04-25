@@ -104,6 +104,6 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 
 
 ### Códigos fuente en la carpeta junto a readme
-esta ->[aqui](https://github.com/Brayanpower/Proyecto-Tacho/tree/main/Codigos%20Usados)
+Los codigos utilizados en este proyecto estan aqui ->[aqui](https://github.com/Brayanpower/Proyecto-Tacho/tree/main/Codigos%20Usados)
 
 
