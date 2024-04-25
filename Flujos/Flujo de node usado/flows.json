@@ -1,0 +1,1547 @@
+[
+    {
+        "id": "e14fba57b935bcb0",
+        "type": "tab",
+        "label": "Flow 5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2897e25c522b6f1f",
+        "type": "mqtt in",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/gas",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "887867a4e3e5f9e7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "706513edb8bf4ea8",
+                "8ceb597cbd0def85"
+            ]
+        ]
+    },
+    {
+        "id": "4fc4536cf3fd1d49",
+        "type": "mqtt out",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/gas",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "887867a4e3e5f9e7",
+        "x": 540,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "8ceb597cbd0def85",
+        "type": "debug",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "614b4acb5bfb9b8e",
+        "type": "inject",
+        "z": "e14fba57b935bcb0",
+        "name": "temp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 200,
+        "y": 300,
+        "wires": [
+            [
+                "9a43cb36748d9db3"
+            ]
+        ]
+    },
+    {
+        "id": "9a43cb36748d9db3",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"switch\", false);",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 300,
+        "wires": [
+            [
+                "4fc4536cf3fd1d49"
+            ]
+        ]
+    },
+    {
+        "id": "706513edb8bf4ea8",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "msg.payload = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 120,
+        "wires": [
+            [
+                "af999b79d16b8756",
+                "dc1d71babca9a0e3",
+                "804c9218ed47dd90"
+            ]
+        ]
+    },
+    {
+        "id": "804c9218ed47dd90",
+        "type": "postgresql",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "query": "INSERT INTO sensor_details(sensor_id, user_id, value) VALUES(32, 9, '{{msg.payload}}');",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 710,
+        "y": 180,
+        "wires": [
+            [
+                "8ceb597cbd0def85"
+            ]
+        ]
+    },
+    {
+        "id": "af999b79d16b8756",
+        "type": "ui_text",
+        "z": "e14fba57b935bcb0",
+        "group": "0164660f206db023",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Concentración de gas: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 680,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "dc1d71babca9a0e3",
+        "type": "ui_chart",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "group": "0164660f206db023",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Variación de gas",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 710,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "619e885b0e2b961c",
+        "type": "mqtt in",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/llama",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "887867a4e3e5f9e7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 900,
+        "wires": [
+            [
+                "9f6e8cda6ef8539a",
+                "9157b2c28233fad2"
+            ]
+        ]
+    },
+    {
+        "id": "eb883bf71e95eeee",
+        "type": "mqtt out",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/llama",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "887867a4e3e5f9e7",
+        "x": 520,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "9157b2c28233fad2",
+        "type": "debug",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "9f4e8cde81fbd111",
+        "type": "inject",
+        "z": "e14fba57b935bcb0",
+        "name": "temp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 1020,
+        "wires": [
+            [
+                "b9f839ecb8ec62e8"
+            ]
+        ]
+    },
+    {
+        "id": "b9f839ecb8ec62e8",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"switch\", false);",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1020,
+        "wires": [
+            [
+                "eb883bf71e95eeee"
+            ]
+        ]
+    },
+    {
+        "id": "9f6e8cda6ef8539a",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "msg.payload = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 840,
+        "wires": [
+            [
+                "42e47ae2464532e4",
+                "750b8e7a381a2beb",
+                "612dd91b30771467"
+            ]
+        ]
+    },
+    {
+        "id": "612dd91b30771467",
+        "type": "postgresql",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "query": "INSERT INTO sensor_details(sensor_id, user_id, value) VALUES(16, 9, '{{msg.payload}}');",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 680,
+        "y": 900,
+        "wires": [
+            [
+                "9157b2c28233fad2"
+            ]
+        ]
+    },
+    {
+        "id": "42e47ae2464532e4",
+        "type": "ui_text",
+        "z": "e14fba57b935bcb0",
+        "group": "549fe99fea5939fe",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Valor: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 590,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "750b8e7a381a2beb",
+        "type": "ui_chart",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "group": "549fe99fea5939fe",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Llama",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 640,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "29a87ecdaab1d21a",
+        "type": "mqtt in",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/movimiento",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "887867a4e3e5f9e7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 270,
+        "y": 540,
+        "wires": [
+            [
+                "3eba119cb1600a7a",
+                "e2333aa2c228d8c1"
+            ]
+        ]
+    },
+    {
+        "id": "78b4d91833c96da2",
+        "type": "mqtt out",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/movimiento",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "887867a4e3e5f9e7",
+        "x": 610,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "e2333aa2c228d8c1",
+        "type": "debug",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 810,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "3a5f40806324ef4b",
+        "type": "inject",
+        "z": "e14fba57b935bcb0",
+        "name": "temp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 240,
+        "y": 660,
+        "wires": [
+            [
+                "1234db8839a40efc"
+            ]
+        ]
+    },
+    {
+        "id": "1234db8839a40efc",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"switch\", false);",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 660,
+        "wires": [
+            [
+                "78b4d91833c96da2"
+            ]
+        ]
+    },
+    {
+        "id": "3eba119cb1600a7a",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "msg.payload = msg.payload == 1?1:0;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 480,
+        "wires": [
+            [
+                "5edf11623ccb206e",
+                "253e6223924baed1"
+            ]
+        ]
+    },
+    {
+        "id": "253e6223924baed1",
+        "type": "postgresql",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "query": "INSERT INTO sensor_details(sensor_id, user_id, value) VALUES(31, 9, '{{msg.payload}}');",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 710,
+        "y": 520,
+        "wires": [
+            [
+                "e2333aa2c228d8c1"
+            ]
+        ]
+    },
+    {
+        "id": "5be1ee2c0fc4d2d0",
+        "type": "ui_text",
+        "z": "e14fba57b935bcb0",
+        "group": "7f6eeda83332e85f",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Salon trabajadores: ",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 710,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "5edf11623ccb206e",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "msg.payload = msg.payload== 1?\"Ocupado\":\"Vacio\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 400,
+        "wires": [
+            [
+                "5be1ee2c0fc4d2d0"
+            ]
+        ]
+    },
+    {
+        "id": "2a36de7671a1b97a",
+        "type": "mqtt in",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/relay",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "887867a4e3e5f9e7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 1260,
+        "wires": [
+            [
+                "f6410f6e722796c6",
+                "b705b42a0f5a6a19"
+            ]
+        ]
+    },
+    {
+        "id": "eca127af4b64dc5d",
+        "type": "mqtt out",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/relay",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "887867a4e3e5f9e7",
+        "x": 520,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "f6410f6e722796c6",
+        "type": "debug",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 1320,
+        "wires": []
+    },
+    {
+        "id": "b447dc4d07aa6f5c",
+        "type": "inject",
+        "z": "e14fba57b935bcb0",
+        "name": "temp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 1380,
+        "wires": [
+            [
+                "1da77582d50c0511"
+            ]
+        ]
+    },
+    {
+        "id": "1da77582d50c0511",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "global.set(\"switch\", !global.get(\"switch\"));\nmsg.payload=global.get(\"switch\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"switch\", false);",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1380,
+        "wires": [
+            [
+                "eca127af4b64dc5d"
+            ]
+        ]
+    },
+    {
+        "id": "a3de07826668d8ee",
+        "type": "ui_text",
+        "z": "e14fba57b935bcb0",
+        "group": "a583df43fb027eba",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estatus relay:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 580,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "b705b42a0f5a6a19",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "msg.payload = msg.payload==\"true\"?\"Encendido\":\"Apagado\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 1200,
+        "wires": [
+            [
+                "a3de07826668d8ee"
+            ]
+        ]
+    },
+    {
+        "id": "1357fab878e12607",
+        "type": "mqtt in",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/photo",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "887867a4e3e5f9e7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 1940,
+        "wires": [
+            [
+                "6c812a5a65175708",
+                "b62354122709d25a"
+            ]
+        ]
+    },
+    {
+        "id": "fe4787b594346e77",
+        "type": "mqtt out",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/photo",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "887867a4e3e5f9e7",
+        "x": 470,
+        "y": 2060,
+        "wires": []
+    },
+    {
+        "id": "b62354122709d25a",
+        "type": "debug",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 2020,
+        "wires": []
+    },
+    {
+        "id": "b5399af65c5e9a4b",
+        "type": "inject",
+        "z": "e14fba57b935bcb0",
+        "name": "temp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 120,
+        "y": 2060,
+        "wires": [
+            [
+                "85ebfe9ffa1b7b70"
+            ]
+        ]
+    },
+    {
+        "id": "85ebfe9ffa1b7b70",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"switch\", false);",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 2060,
+        "wires": [
+            [
+                "fe4787b594346e77"
+            ]
+        ]
+    },
+    {
+        "id": "6c812a5a65175708",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "msg.payload = msg.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 1880,
+        "wires": [
+            [
+                "2d40fe06713ce0bf",
+                "5de0638897864815",
+                "e1be81b48a7d0316"
+            ]
+        ]
+    },
+    {
+        "id": "2d40fe06713ce0bf",
+        "type": "ui_text",
+        "z": "e14fba57b935bcb0",
+        "group": "8a5cda7755bd492a",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Valor: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 540,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "5de0638897864815",
+        "type": "ui_chart",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "group": "8a5cda7755bd492a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Fotoresistor",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "5",
+        "removeOlderPoints": "100",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 610,
+        "y": 1880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0ca909dc987d56df",
+        "type": "mqtt in",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/rgb",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "887867a4e3e5f9e7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 2260,
+        "wires": [
+            [
+                "c5a447e9d08413b3",
+                "da1fc7806bf61843"
+            ]
+        ]
+    },
+    {
+        "id": "6a1674c1b1e1c44c",
+        "type": "mqtt out",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/rgb",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "887867a4e3e5f9e7",
+        "x": 500,
+        "y": 2380,
+        "wires": []
+    },
+    {
+        "id": "da1fc7806bf61843",
+        "type": "debug",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 2340,
+        "wires": []
+    },
+    {
+        "id": "0e2a19674673ffba",
+        "type": "inject",
+        "z": "e14fba57b935bcb0",
+        "name": "temp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 160,
+        "y": 2380,
+        "wires": [
+            [
+                "a17101b5b5593f47"
+            ]
+        ]
+    },
+    {
+        "id": "a17101b5b5593f47",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"switch\", false);",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 2380,
+        "wires": [
+            [
+                "6a1674c1b1e1c44c"
+            ]
+        ]
+    },
+    {
+        "id": "c5a447e9d08413b3",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "msg.payload = msg.payload == 0?'Verde':'Rojo';\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 2200,
+        "wires": [
+            [
+                "f4cbf04195eabda6",
+                "1e027197ff779d17"
+            ]
+        ]
+    },
+    {
+        "id": "f4cbf04195eabda6",
+        "type": "ui_text",
+        "z": "e14fba57b935bcb0",
+        "group": "199217f852fbf229",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Valor: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 580,
+        "y": 2140,
+        "wires": []
+    },
+    {
+        "id": "2b2db59432c21549",
+        "type": "mqtt in",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/relay-2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "887867a4e3e5f9e7",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 1600,
+        "wires": [
+            [
+                "7096c821b0cae242",
+                "576230dc95bd8bc7"
+            ]
+        ]
+    },
+    {
+        "id": "4db84f3492cc7b23",
+        "type": "mqtt out",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "topic": "utng/Proyecto/relay-2",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "887867a4e3e5f9e7",
+        "x": 520,
+        "y": 1720,
+        "wires": []
+    },
+    {
+        "id": "7096c821b0cae242",
+        "type": "debug",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "b14b76bf01bd693a",
+        "type": "inject",
+        "z": "e14fba57b935bcb0",
+        "name": "temp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 160,
+        "y": 1720,
+        "wires": [
+            [
+                "957670db47b36d01"
+            ]
+        ]
+    },
+    {
+        "id": "957670db47b36d01",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "global.set(\"switch\", !global.get(\"switch\"));\nmsg.payload=global.get(\"switch\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"switch\", false);",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 1720,
+        "wires": [
+            [
+                "4db84f3492cc7b23"
+            ]
+        ]
+    },
+    {
+        "id": "9a664ac3d1e1bee8",
+        "type": "ui_text",
+        "z": "e14fba57b935bcb0",
+        "group": "8479411c9ea19a63",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estatus relay:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 720,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "576230dc95bd8bc7",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "msg.payload = msg.payload == 'true'?1:0;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1540,
+        "wires": [
+            [
+                "16c8385604235d1d",
+                "c8cc75b2d24cb90a"
+            ]
+        ]
+    },
+    {
+        "id": "c8cc75b2d24cb90a",
+        "type": "postgresql",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "query": "INSERT INTO sensor_details(sensor_id, user_id, value) VALUES(27, 9, '{{msg.payload}}');",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 680,
+        "y": 1580,
+        "wires": [
+            [
+                "7096c821b0cae242"
+            ]
+        ]
+    },
+    {
+        "id": "16c8385604235d1d",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "msg.payload = msg.payload==1?'Encendido':'Apagado';\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1520,
+        "wires": [
+            [
+                "9a664ac3d1e1bee8"
+            ]
+        ]
+    },
+    {
+        "id": "7a51fc8b9aba64db",
+        "type": "ui_switch",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "label": "Relay",
+        "tooltip": "",
+        "group": "8479411c9ea19a63",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 1800,
+        "wires": [
+            [
+                "4db84f3492cc7b23"
+            ]
+        ]
+    },
+    {
+        "id": "1e027197ff779d17",
+        "type": "function",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "func": "msg.payload = msg.payload == 'Verde'?'Si':'No';\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 2240,
+        "wires": [
+            [
+                "52de690d515c37d0"
+            ]
+        ]
+    },
+    {
+        "id": "52de690d515c37d0",
+        "type": "ui_text",
+        "z": "e14fba57b935bcb0",
+        "group": "199217f852fbf229",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Horario laboral:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 660,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "7d50297b1ddd5e39",
+        "type": "remote-access",
+        "z": "e14fba57b935bcb0",
+        "confignode": "83b88bac0522fb13",
+        "name": "FINAL",
+        "verbose": 0,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "e1be81b48a7d0316",
+        "type": "postgresql",
+        "z": "e14fba57b935bcb0",
+        "name": "",
+        "query": "INSERT INTO sensor_details(sensor_id, user_id, value) VALUES(16, 9, '{{msg.payload}}');",
+        "postgreSQLConfig": "9277f660ec41eacb",
+        "split": false,
+        "rowsPerMsg": 1,
+        "outputs": 1,
+        "x": 650,
+        "y": 1940,
+        "wires": [
+            [
+                "b62354122709d25a"
+            ]
+        ]
+    },
+    {
+        "id": "887867a4e3e5f9e7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "192.168.187.135",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9277f660ec41eacb",
+        "type": "postgreSQLConfig",
+        "name": "",
+        "host": "127.0.0.1",
+        "hostFieldType": "str",
+        "port": "5432",
+        "portFieldType": "num",
+        "database": "aiot",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": "10",
+        "maxFieldType": "num",
+        "idle": "1000",
+        "idleFieldType": "num",
+        "connectionTimeout": "10000",
+        "connectionTimeoutFieldType": "num",
+        "user": "postgres",
+        "userFieldType": "str",
+        "password": "1234",
+        "passwordFieldType": "str"
+    },
+    {
+        "id": "0164660f206db023",
+        "type": "ui_group",
+        "name": "Gas",
+        "tab": "7519c29e0b0f9da9",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "549fe99fea5939fe",
+        "type": "ui_group",
+        "name": "Llama",
+        "tab": "7519c29e0b0f9da9",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7f6eeda83332e85f",
+        "type": "ui_group",
+        "name": "Movimiento",
+        "tab": "7519c29e0b0f9da9",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a583df43fb027eba",
+        "type": "ui_group",
+        "name": "Relay",
+        "tab": "7519c29e0b0f9da9",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8a5cda7755bd492a",
+        "type": "ui_group",
+        "name": "PHOTORESISTOR",
+        "tab": "7519c29e0b0f9da9",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "199217f852fbf229",
+        "type": "ui_group",
+        "name": "Led RGB",
+        "tab": "7519c29e0b0f9da9",
+        "order": 7,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8479411c9ea19a63",
+        "type": "ui_group",
+        "name": "Relay 2",
+        "tab": "7519c29e0b0f9da9",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "83b88bac0522fb13",
+        "type": "remote-config",
+        "name": "Proyecto",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/ui",
+        "instancehash": "7abo9nn5adcf3ph52354g7yplely1803zya98fv3cgwnpukcx8hkvt9fqwk4ga4w",
+        "server": "nodered04.remote-red.com",
+        "region": "us"
+    },
+    {
+        "id": "7519c29e0b0f9da9",
+        "type": "ui_tab",
+        "name": "Proyecto",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
