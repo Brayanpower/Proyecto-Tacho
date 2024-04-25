@@ -5,12 +5,8 @@
 - RAMON LOPEZ GARCIA 1222100432
 
 ## Carta de liberación del proyecto
-- Dirigida al Docente
-- Debe de expresar las funcionalidades que tiene el proyecto
-- Nombres de los integrantes que participaron en el proyecto
-- Es una imagen jpg o png.
-- Firmada por el empresario o docente ageno a la UTNG, agradeciendo la contribución de la UTNG.
-- Hoja membretada (Logo de la empresa, dirección y contacto)
+![Imagen de WhatsApp 2024-04-24 a las 19 46 05_caf01674](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/3746f13e-ba8e-445e-9d81-83533d7f0b64)
+
 
 ## Lista del Hardware utilizado
 | Id | Componente | Descripción | Imagen | Cantidad | Costo total |
@@ -67,6 +63,16 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 
 # Evidencias de funcionamiento
 - Captura de pantalla de flujos de Node RED
+  ### Flujos de Node red
+  -sesnsor de movimiento y sesnor de gas
+  ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/638d7aeb-17e6-41c9-a034-c5662ba2350f)
+  - Sensor de de llama y relay
+    ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f77a11f0-c699-435f-b3e4-24d291d689ca)
+  -Sensor photoresistor y relay 2
+![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/b8c39749-831c-4e02-bb7b-b07b96f6e5b0)
+-led RGB
+![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/2202ea19-11fe-4379-b1f3-cd5e8c1930af)
+
 - Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
 - Video demostrativo de las funcionalidades del proyecto
  |![Imagen de WhatsApp 2024-04-24 a las 08 29 06_91f4f05f](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/63d4ab07-a21a-4a6c-8247-9f3de862b3c0)|
