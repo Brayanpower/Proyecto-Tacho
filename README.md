@@ -51,16 +51,17 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 - ESP 32
 
 ## Funcionalidades
-
 | Id | Historia de usuario | Prioridad | Estimación | Como probarlo | Responsable |
 |----|---------------------|-----------|------------|---------------|-------------|
-|    |                     |           |            |               |             |
-|    |                     |           |            |               |             |
-|    |                     |           |            |               |             |
+|  1  | Control de iluminación automático | Alta | 8 horas | Verificar que las luces se enciendan automáticamente según la luz natural y se apaguen cuando sea necesario. | BRAYAN DANIEL MENDIOLA GUTIERREZ |
+|  2  | Detección de gas y alerta de emergencia | Alta | 10 horas | Comprobar que el sistema detecte la presencia de gas inflamable o monóxido de carbono y envíe una alerta. | RAMON LOPEZ GARCIA |
+|  3  | Integración de hardware y software | Media | 6 horas | Probar la comunicación entre los diferentes componentes hardware y el correcto funcionamiento del software en la Raspberry Pi y el ESP32. | Ambos |
+|  4  | Diseño de interfaz de usuario | Media | 6 horas | Evaluar la usabilidad y la estética de la interfaz de usuario diseñada para el control manual de las luces y la visualización de alertas. | BRAYAN DANIEL MENDIOLA GUTIERREZ |
+|  5  | Implementación de sistema de registro de eventos | Baja | 4 horas | Verificar que el sistema registre eventos importantes como el encendido/apagado de luces y las alertas de gas en un archivo de registro. | RAMON LOPEZ GARCIA |
 
 ## Prototipo en dibujo
 - Coloca la imagen de tu proyecto al iniciar el desarrollo
-Videos ->  [aqui](https://drive.google.com/drive/folders/1ts54eDN74doQkML1VYxXvpmgDTeKWsbH?usp=sharing)
+
 # Evidencias de funcionamiento
 - Captura de pantalla de flujos de Node RED
   ### Flujos de Node red
@@ -76,8 +77,8 @@ Videos ->  [aqui](https://drive.google.com/drive/folders/1ts54eDN74doQkML1VYxXvp
 - Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
   
 ## Videos demostrativo de las funcionalidades del proyecto
-
-##Imagenes de armando de circuitos
+- Videos(Proyecto y Agradecieminto) ->  [aqui](https://drive.google.com/drive/folders/1ts54eDN74doQkML1VYxXvpmgDTeKWsbH?usp=sharing)
+## Imagenes de armando de circuitos
 ![Imagen de WhatsApp 2024-04-24 a las 08 29 06_91f4f05f](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/63d4ab07-a21a-4a6c-8247-9f3de862b3c0)
 ![Imagen de WhatsApp 2024-04-24 a las 08 29 06_87b08fef](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/25b0cef7-5eeb-4785-b249-40f1b36d2aff)
   ## capturas de respuesta en postgrest usando Rasberry
