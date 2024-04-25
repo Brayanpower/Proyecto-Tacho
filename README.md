@@ -74,10 +74,11 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
   - Led RGB
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/2202ea19-11fe-4379-b1f3-cd5e8c1930af)
 
-- Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
+## Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
   - pantalla ESP32
     -![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f4434c23-9875-4c09-9028-d67e50c8b33a)
-
+  - DASHBOARD
+    -   
 ## Videos demostrativo de las funcionalidades del proyecto
 - Videos(Proyecto y Agradecieminto) ->  [aqui](https://drive.google.com/drive/folders/1ts54eDN74doQkML1VYxXvpmgDTeKWsbH?usp=sharing)
 ## Imagenes de armando de circuitos
