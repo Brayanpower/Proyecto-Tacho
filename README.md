@@ -64,22 +64,23 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 # Evidencias de funcionamiento
 - Captura de pantalla de flujos de Node RED
   ### Flujos de Node red
-  -sesnsor de movimiento y sesnor de gas
-  ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/638d7aeb-17e6-41c9-a034-c5662ba2350f)
-  - Sensor de de llama y relay
-    ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f77a11f0-c699-435f-b3e4-24d291d689ca)
-  -Sensor photoresistor y relay 2
+-sesnsor de movimiento y sesnor de gas
+![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/638d7aeb-17e6-41c9-a034-c5662ba2350f)
+-Sensor de de llama y relay
+![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f77a11f0-c699-435f-b3e4-24d291d689ca)
+-Sensor photoresistor y relay 2
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/b8c39749-831c-4e02-bb7b-b07b96f6e5b0)
 -led RGB
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/2202ea19-11fe-4379-b1f3-cd5e8c1930af)
 
 - Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
+  
 - Video demostrativo de las funcionalidades del proyecto
-  ![Imagen de WhatsApp 2024-04-24 a las 08 29 06_91f4f05f](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/63d4ab07-a21a-4a6c-8247-9f3de862b3c0)
-  ![Imagen de WhatsApp 2024-04-24 a las 08 29 06_87b08fef](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/25b0cef7-5eeb-4785-b249-40f1b36d2aff)
--- capturas de respuesta en postgrest usando Rasberry
-- tabla senror
-  ![Imagen de WhatsApp 2024-04-24 a las 17 14 49_a52277ae](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/6133f6e7-729b-4189-8a9c-fb11a3182a27)
+![Imagen de WhatsApp 2024-04-24 a las 08 29 06_91f4f05f](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/63d4ab07-a21a-4a6c-8247-9f3de862b3c0)
+![Imagen de WhatsApp 2024-04-24 a las 08 29 06_87b08fef](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/25b0cef7-5eeb-4785-b249-40f1b36d2aff)
+  ## capturas de respuesta en postgrest usando Rasberry
+- tabla sensor
+![Imagen de WhatsApp 2024-04-24 a las 17 14 49_a52277ae](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/6133f6e7-729b-4189-8a9c-fb11a3182a27)
 -tabla users
 ![Imagen de WhatsApp 2024-04-24 a las 17 15 10_357fbc22](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/8103a353-33a0-4147-b6b6-a303b2b3b758)
 - Tabla Sensor_Destails
