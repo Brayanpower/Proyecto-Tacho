@@ -60,7 +60,7 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 
 ## Prototipo en dibujo
 - Coloca la imagen de tu proyecto al iniciar el desarrollo
-
+Videos ->  [aqui](https://drive.google.com/drive/folders/1ts54eDN74doQkML1VYxXvpmgDTeKWsbH?usp=sharing)
 # Evidencias de funcionamiento
 - Captura de pantalla de flujos de Node RED
   ### Flujos de Node red
@@ -75,7 +75,9 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 
 - Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
   
-- Video demostrativo de las funcionalidades del proyecto
+## Videos demostrativo de las funcionalidades del proyecto
+
+##Imagenes de armando de circuitos
 ![Imagen de WhatsApp 2024-04-24 a las 08 29 06_91f4f05f](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/63d4ab07-a21a-4a6c-8247-9f3de862b3c0)
 ![Imagen de WhatsApp 2024-04-24 a las 08 29 06_87b08fef](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/25b0cef7-5eeb-4785-b249-40f1b36d2aff)
   ## capturas de respuesta en postgrest usando Rasberry
