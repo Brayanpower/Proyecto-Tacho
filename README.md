@@ -71,7 +71,8 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
   - Sensor de de llama y relay
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f77a11f0-c699-435f-b3e4-24d291d689ca)
   - Sensor photoresistor y relay 2
-![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/b8c39749-831c-4e02-bb7b-b07b96f6e5b0)
+![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/fd5edc21-ac43-4da9-9d4c-57eb642a0c02)
+
   - Led RGB
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/2202ea19-11fe-4379-b1f3-cd5e8c1930af)
 
