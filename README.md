@@ -1,8 +1,8 @@
-# Artesania Sofi AIOT
+# Artesanía Sofi AIOT
 
 ## Integrantes
-- BRAYAN DANIEL MENDIOLA GUTIERREZ 1222100472
-- RAMON LOPEZ GARCIA 1222100435
+- BRAYAN DANIEL MENDIOLA GUTIÉRREZ 1222100472
+- RAMÓN LÓPEZ GARCÍA 1222100435
 
 ## Carta de liberación del proyecto
 ![Imagen de WhatsApp 2024-04-24 a las 19 46 05_caf01674](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/3746f13e-ba8e-445e-9d81-83533d7f0b64)
@@ -16,23 +16,23 @@
 |   4 |     KY-019       |     El KY-019 es un módulo de relé utilizado para controlar dispositivos de alta potencia con un microcontrolador como Arduino. Esencialmente, actúa como un interruptor controlado electrónicamente.        | ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/b1dfadc4-bb8b-4b6f-98e7-d90303ca018c) |   2       |   $54         |
 |   5 |       KY-026     | El KY-026 es un módulo sensor de detección de llama o fuego. Utiliza un sensor de infrarrojos para detectar la presencia de una llama o una fuente de calor. Este módulo es comúnmente utilizado en proyectos de seguridad y monitoreo para detectar incendios o para activar sistemas de alarma en caso de emergencia. |![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/b24531e0-bdf7-4f68-9713-ad1ec509161c) |   1       |    $22         |
 |   6 |       KY-016     |      El KY-016 es un módulo sensor de temperatura y humedad que utiliza el sensor DHT11. Este sensor es capaz de medir la temperatura y la humedad del ambiente y enviar estos datos de manera digital a un microcontrolador como Arduino.       |   ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/8181db51-777a-4d69-9ff2-7b6814caffb4)|   1       |   $15         |
-|   7 |       ky-018     |     El KY-018 es un módulo sensor de detección de luz. Utiliza un fotodiodo para medir la intensidad de la luz en el entorno. Es comúnmente utilizado en proyectos donde se necesita detectar la presencia o ausencia de luz, como en sistemas de iluminación automática, sistemas de seguridad, o para controlar dispositivos en función de la luminosidad del entorno.        |     ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/70afb6b1-5b8d-4c01-8aaa-317c96c27d4a)|  1        |    $15         |
+|   7 |       KY-018     |     El KY-018 es un módulo sensor de detección de luz. Utiliza un fotodiodo para medir la intensidad de la luz en el entorno. Es comúnmente utilizado en proyectos donde se necesita detectar la presencia o ausencia de luz, como en sistemas de iluminación automática, sistemas de seguridad, o para controlar dispositivos en función de la luminosidad del entorno.        |     ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/70afb6b1-5b8d-4c01-8aaa-317c96c27d4a)|  1        |    $15         |
 |   8 |      HC-SR501      |     El sensor PIR (Passive Infrared Sensor) es un dispositivo que detecta movimiento al detectar cambios en el nivel de radiación infrarroja en su campo de visión. Estos sensores son comúnmente utilizados en sistemas de seguridad y automatización para detectar la presencia de personas u objetos en áreas específicas.        |     ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/71bf22cc-2cd5-4e87-bc5b-6dafef5164e0) | 1         |           $50  |
-|   9 |      ky-018      |       Me temo que cometí un error anteriormente. El KY-018 es, de hecho, un módulo sensor de temperatura y humedad. Utiliza el sensor DHT22 para medir tanto la temperatura como la humedad del ambiente.      |   ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/067ba819-52a0-46fa-9d41-ab940ad3da02)|    1      |     $14       |
+|   9 |      KY-018      |       Me temo que cometí un error anteriormente. El KY-018 es, de hecho, un módulo sensor de temperatura y humedad. Utiliza el sensor DHT22 para medir tanto la temperatura como la humedad del ambiente.      |   ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/067ba819-52a0-46fa-9d41-ab940ad3da02)|    1      |     $14       |
 |   10 |       Display OLED     |      El display OLED (Organic Light-Emitting Diode) para Arduino es un tipo de pantalla que utiliza diodos orgánicos para producir luz. Estas pantallas son delgadas, livianas y consumen menos energía en comparación con las pantallas LCD tradicionales. Son ideales para proyectos donde se requiere una pantalla de alta calidad con bajo consumo de energía, como en dispositivos portátiles, wearables, y sistemas de monitoreo en tiempo real.        |     ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/7243428d-eed2-449b-973f-bd450c44eaf0)|      1    |     $70        |
-|   11 |     paquete Cables Dupont       |       Los cables Dupont son cables con conectores macho y hembra en cada extremo, diseñados para facilitar la conexión entre componentes electrónicos. Estos cables son muy utilizados en proyectos de prototipado electrónico y en la conexión de placas de desarrollo como Arduino con otros módulos, sensores o actuadores.      |  ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/feb0dffe-1606-4f19-ae1b-d5541e479a58)|  1   |        $70     |
-|   12|caja de resgistro sensillo|       caja de registro de intalacion lectrica      |   ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f0aad9d1-4e99-495a-8b06-1ed1d80041c8)|  1        |     $7        |
-|   13|   CINTA AISLANTE ELÉCTRICA DE PVC 16.76 M NEGRA          |     La cinta aislante eléctrica es un tipo de cinta adhesiva diseñada específicamente para aislar y proteger conexiones eléctricas.  |   ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/d06365b7-b6a5-4c71-9d22-d93f7ecaef22)|    1      |    $14        |
-|   14|    cable estañado para protoboard      |      El cable estañado es un tipo de cable que ha sido recubierto con una capa delgada de estaño en su superficie. Este recubrimiento de estaño proporciona varias ventajas, incluyendo una mayor resistencia a la corrosión y oxidación, lo que prolonga la vida útil del cable y mejora su durabilidad. Además, el estaño facilita la soldadura de los cables, ya que reduce la formación de óxido durante el proceso de soldadura y ayuda a crear una conexión eléctrica más confiable y duradera.       |    ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/ed2e3dc2-a8f8-4208-8672-b5f145cee48e) |    1      |    $55         |
-|   15|       placa de acrilico     |     Las placas de acrílico son láminas transparentes o translúcidas hechas de un polímero termoplástico conocido como PMMA (polimetilmetacrilato). Son conocidas por su alta transparencia óptica, resistencia al impacto y durabilidad. Estas placas vienen en una variedad de tamaños, grosores y colores, lo que las hace versátiles para una amplia gama de aplicaciones.        |   ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/28fdb574-667e-4f22-8cb6-eb450b978ebc)|    1      |   $Gratis          |
+|   11 |     Paquete cables Dupont       |       Los cables Dupont son cables con conectores macho y hembra en cada extremo, diseñados para facilitar la conexión entre componentes electrónicos. Estos cables son muy utilizados en proyectos de prototipado electrónico y en la conexión de placas de desarrollo como Arduino con otros módulos, sensores o actuadores.      |  ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/feb0dffe-1606-4f19-ae1b-d5541e479a58)|  1   |        $70     |
+|   12|Caja de registro sencillo|       caja de registro de intalacion lectrica      |   ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f0aad9d1-4e99-495a-8b06-1ed1d80041c8)|  1        |     $7        |
+|   13|   Cinta aislante eléctrica de PVC 16.76 M negra          |     La cinta aislante eléctrica es un tipo de cinta adhesiva diseñada específicamente para aislar y proteger conexiones eléctricas.  |   ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/d06365b7-b6a5-4c71-9d22-d93f7ecaef22)|    1      |    $14        |
+|   14|    Cable estañado para protoboard      |      El cable estañado es un tipo de cable que ha sido recubierto con una capa delgada de estaño en su superficie. Este recubrimiento de estaño proporciona varias ventajas, incluyendo una mayor resistencia a la corrosión y oxidación, lo que prolonga la vida útil del cable y mejora su durabilidad. Además, el estaño facilita la soldadura de los cables, ya que reduce la formación de óxido durante el proceso de soldadura y ayuda a crear una conexión eléctrica más confiable y duradera.       |    ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/ed2e3dc2-a8f8-4208-8672-b5f145cee48e) |    1      |    $55         |
+|   15|       Placa de acrílico     |     Las placas de acrílico son láminas transparentes o translúcidas hechas de un polímero termo plástico conocido como PMMA (polimetilmetacrilato). Son conocidas por su alta transparencia óptica, resistencia al impacto y durabilidad. Estas placas vienen en una variedad de tamaños, grosores y colores, lo que las hace versátiles para una amplia gama de aplicaciones.        |   ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/28fdb574-667e-4f22-8cb6-eb450b978ebc)|    1      |   $Gratis          |
 
 ## Lista de Software utilizado
-| Id | Software | Version | Tipo |
+| Id | Software | Versión | Tipo |
 |----|----------|---------|------|
 |  1  |    Thonny      |3.3.11	|  Entorno de desarrollo integrado (IDE) para Python    |
 |  2  |   Node-RED	       |2.1.3|Entorno de programación visual para IoT (Internet de las cosas)|
 |  3  |    PostgreSQL      |14.0|Sistema de gestión de bases de datos relacional (SGBD)|
-|  4  |Raspbian|Ultima Version|Sistema operativo basado en Linux para Raspberry Pi|
+|  4  |Raspbian|Ultima Versión|Sistema operativo basado en Linux para Raspberry Pi|
 
 ## Visión del producto
 ¿Como generar la visión del proyecto?
@@ -54,11 +54,11 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 ## Funcionalidades
 | Id | Historia de usuario | Prioridad | Estimación | Como probarlo | Responsable |
 |----|---------------------|-----------|------------|---------------|-------------|
-|  1  | Control de iluminación automático | Alta | 8 horas | Verificar que las luces se enciendan automáticamente según la luz natural y se apaguen cuando sea necesario. | BRAYAN DANIEL MENDIOLA GUTIERREZ |
-|  2  | Detección de gas y alerta de emergencia | Alta | 10 horas | Comprobar que el sistema detecte la presencia de gas inflamable o monóxido de carbono y envíe una alerta. | RAMON LOPEZ GARCIA |
+|  1  | Control de iluminación automático | Alta | 8 horas | Verificar que las luces se enciendan automáticamente según la luz natural y se apaguen cuando sea necesario. | BRAYAN DANIEL MENDIOLA GUTIÉRREZ |
+|  2  | Detección de gas y alerta de emergencia | Alta | 10 horas | Comprobar que el sistema detecte la presencia de gas inflamable o monóxido de carbono y envíe una alerta. | RAMÓN LÓPEZ GARCÍA |
 |  3  | Integración de hardware y software | Media | 6 horas | Probar la comunicación entre los diferentes componentes hardware y el correcto funcionamiento del software en la Raspberry Pi y el ESP32. | Ambos |
-|  4  | Diseño de interfaz de usuario | Media | 6 horas | Evaluar la usabilidad y la estética de la interfaz de usuario diseñada para el control manual de las luces y la visualización de alertas. | BRAYAN DANIEL MENDIOLA GUTIERREZ |
-|  5  | Implementación de sistema de registro de eventos | Baja | 4 horas | Verificar que el sistema registre eventos importantes como el encendido/apagado de luces y las alertas de gas en un archivo de registro. | RAMON LOPEZ GARCIA |
+|  4  | Diseño de interfaz de usuario | Media | 6 horas | Evaluar la usabilidad y la estética de la interfaz de usuario diseñada para el control manual de las luces y la visualización de alertas. | BRAYAN DANIEL MENDIOLA GUTIÉRREZ |
+|  5  | Implementación de sistema de registro de eventos | Baja | 4 horas | Verificar que el sistema registre eventos importantes como el encendido/apagado de luces y las alertas de gas en un archivo de registro. | RAMÓN LÓPEZ GARCÍA |
 
 ## Prototipo en dibujo
 - Coloca la imagen de tu proyecto al iniciar el desarrollo
@@ -66,7 +66,7 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 ## Evidencias de funcionamiento
 - Captura de pantalla de flujos de Node RED
 ### Flujos de Node red
-  - sesnsor de movimiento y sesnor de gas
+  - sensor de movimiento y senor de gas
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/638d7aeb-17e6-41c9-a034-c5662ba2350f)
   - Sensor de de llama y relay
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f77a11f0-c699-435f-b3e4-24d291d689ca)
@@ -87,8 +87,8 @@ El Flujo utilizado en este proyecto estan aqui ->[aqui](https://github.com/Braya
     ![Imagen de WhatsApp 2024-04-24 a las 21 46 13_09500ce2](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/238df604-bd6d-4dda-8d62-42e9495095f3)
 
 ### Videos demostrativo de las funcionalidades del proyecto
-- Videos(Proyecto y Agradecieminto) ->  [aqui](https://drive.google.com/drive/folders/1ts54eDN74doQkML1VYxXvpmgDTeKWsbH?usp=sharing)
-### Imagenes de armando de circuitos
+- Videos(Proyecto y Agradecimiento) ->  [aqui](https://drive.google.com/drive/folders/1ts54eDN74doQkML1VYxXvpmgDTeKWsbH?usp=sharing)
+### Imágenes de armando de circuitos
 - Trabajo 1
   -
 ![Imagen de WhatsApp 2024-04-24 a las 08 29 06_91f4f05f](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/63d4ab07-a21a-4a6c-8247-9f3de862b3c0)
