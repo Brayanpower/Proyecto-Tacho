@@ -65,13 +65,13 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 # Evidencias de funcionamiento
 - Captura de pantalla de flujos de Node RED
   ### Flujos de Node red
--sesnsor de movimiento y sesnor de gas
+  -sesnsor de movimiento y sesnor de gas
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/638d7aeb-17e6-41c9-a034-c5662ba2350f)
--Sensor de de llama y relay
+  -Sensor de de llama y relay
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f77a11f0-c699-435f-b3e4-24d291d689ca)
--Sensor photoresistor y relay 2
+  -Sensor photoresistor y relay 2
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/b8c39749-831c-4e02-bb7b-b07b96f6e5b0)
--led RGB
+  -led RGB
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/2202ea19-11fe-4379-b1f3-cd5e8c1930af)
 
 - Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
