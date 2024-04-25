@@ -76,7 +76,7 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 
 - Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
   - pantalla ESP32
-    ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f4434c23-9875-4c09-9028-d67e50c8b33a)
+    -![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f4434c23-9875-4c09-9028-d67e50c8b33a)
 
 ## Videos demostrativo de las funcionalidades del proyecto
 - Videos(Proyecto y Agradecieminto) ->  [aqui](https://drive.google.com/drive/folders/1ts54eDN74doQkML1VYxXvpmgDTeKWsbH?usp=sharing)
