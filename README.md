@@ -62,7 +62,7 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 ## Prototipo en dibujo
 - Coloca la imagen de tu proyecto al iniciar el desarrollo
 
-# Evidencias de funcionamiento
+## Evidencias de funcionamiento
 - Captura de pantalla de flujos de Node RED
 ### Flujos de Node red
   - sesnsor de movimiento y sesnor de gas
@@ -74,15 +74,15 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
   - Led RGB
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/2202ea19-11fe-4379-b1f3-cd5e8c1930af)
 
-## Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
+### Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
   - pantalla ESP32
     -
     ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f4434c23-9875-4c09-9028-d67e50c8b33a)
   - DASHBOARD
     -   
-## Videos demostrativo de las funcionalidades del proyecto
+### Videos demostrativo de las funcionalidades del proyecto
 - Videos(Proyecto y Agradecieminto) ->  [aqui](https://drive.google.com/drive/folders/1ts54eDN74doQkML1VYxXvpmgDTeKWsbH?usp=sharing)
-## Imagenes de armando de circuitos
+### Imagenes de armando de circuitos
 - Trabajo 1
   -
 ![Imagen de WhatsApp 2024-04-24 a las 08 29 06_91f4f05f](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/63d4ab07-a21a-4a6c-8247-9f3de862b3c0)
@@ -93,7 +93,7 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/160540ba-7e03-4187-a26b-414801517daa)
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/d90d7925-4a16-4795-9b1f-48f1e428e1de)
 
-## capturas de respuesta en postgrest usando Rasberry
+### capturas de respuesta en postgrest usando Rasberry
 - tabla sensor
 ![Imagen de WhatsApp 2024-04-24 a las 17 14 49_a52277ae](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/6133f6e7-729b-4189-8a9c-fb11a3182a27)
 -tabla users
