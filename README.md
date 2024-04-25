@@ -62,6 +62,10 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 
 ## Prototipo en dibujo
 - Coloca la imagen de tu proyecto al iniciar el desarrollo
+ - IMAGEN 1
+  ![Imagen de WhatsApp 2024-04-24 a las 22 32 03_e9108df2](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/24d4c24f-f332-4644-a367-20cead778714)
+  - IMAGEN 2
+  ![Imagen de WhatsApp 2024-04-24 a las 22 39 20_52f7e46c](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/c3ecd1de-9db2-4dee-8e6b-c6a41f348da0)
 
 ## Evidencias de funcionamiento
 - Captura de pantalla de flujos de Node RED
