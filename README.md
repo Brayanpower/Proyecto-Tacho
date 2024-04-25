@@ -85,7 +85,7 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 ![Imagen de WhatsApp 2024-04-24 a las 08 29 06_87b08fef](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/25b0cef7-5eeb-4785-b249-40f1b36d2aff)
 
 - Trabajo 2
-- 
+  - 
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/160540ba-7e03-4187-a26b-414801517daa)
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/d90d7925-4a16-4795-9b1f-48f1e428e1de)
 
