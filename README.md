@@ -46,9 +46,10 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
 
 
 ## Conexiones
-- Imagenes de Wokwi, Fritzing, o de otro software que me permita mostrar las conexiones del circuito.
-- Raspberry Pi
-- ESP 32
+  - Primera Parte
+    -
+    ![Imagen de WhatsApp 2024-04-24 a las 21 32 26_096f9c33](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/727d24a2-0ed5-4740-9bde-c5bb075e5e53)
+
 
 ## Funcionalidades
 | Id | Historia de usuario | Prioridad | Estimación | Como probarlo | Responsable |
