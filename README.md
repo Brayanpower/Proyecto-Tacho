@@ -73,7 +73,8 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
   - Sensor photoresistor y relay 2
 ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/fd5edc21-ac43-4da9-9d4c-57eb642a0c02)
   - Led RGB
-![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/72a3da1a-abd7-4399-953e-edd6a482a219)
+![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/95d29839-3c05-43b5-a22c-7a28e0d94a05)
+
 
 
 ### Captura de las pantallas del proyecto DASHBOARD y Pantalla de la ESP32
@@ -81,7 +82,9 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
     -
     ![image](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/f4434c23-9875-4c09-9028-d67e50c8b33a)
   - DASHBOARD
-    -   
+    -
+    ![Imagen de WhatsApp 2024-04-24 a las 21 46 13_09500ce2](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/238df604-bd6d-4dda-8d62-42e9495095f3)
+
 ### Videos demostrativo de las funcionalidades del proyecto
 - Videos(Proyecto y Agradecieminto) ->  [aqui](https://drive.google.com/drive/folders/1ts54eDN74doQkML1VYxXvpmgDTeKWsbH?usp=sharing)
 ### Imagenes de armando de circuitos
