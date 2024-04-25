@@ -1,5 +1,3 @@
-  ## Mi Proyecto
-
 # Artesania Sofi AIOT
 
 ## Integrantes
@@ -81,6 +79,6 @@ Nuestro producto simplifica el proceso de encendido y apagado de luces, promueve
  |![Imagen de WhatsApp 2024-04-24 a las 08 29 06_87b08fef](https://github.com/Brayanpower/Proyecto-Tacho/assets/116902837/25b0cef7-5eeb-4785-b249-40f1b36d2aff)|
 
 - Código fuente en la carpeta junto a readme
-[aqui](#mi-proyecto)
+[aqui](https://github.com/Brayanpower/Proyecto-Tacho/tree/main/Codigos%20Usados)
 
 
